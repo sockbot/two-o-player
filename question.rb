@@ -9,11 +9,11 @@ class Question
   
   def ask(current_player)
     puts "#{current_player.name}: What does #{value1} plus #{value2} equal?"
-    print "> ".chomp
+    print "> "
+    answer = gets.chomp
   end
 
-  def is_answer_correct
-    answer = gets.chomp
+  def is_answer_correct(answer)
     answer.to_i == @value1 + @value2
   end
 end

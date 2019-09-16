@@ -1,8 +1,5 @@
 class Game
 
-  attr_reader :p1, :p2, :current_player
-  attr_accessor :turns
-
   def initialize
     @p1 = Player.new("Player 1")
     @p2 = Player.new("Player 2")
